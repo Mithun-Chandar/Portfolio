@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Read My Blogs</title>
+</head>
+<!-- HOME -->
+<body id="home">
+        <header class="hero blog">
+            <div id="navbar"class="navbar top">
+                <h1 class="logo">
+                    <span class="text-primary"><i class="fab fa-connectdevelop"></i> Mithun</span> NS
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#cases">Cases</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content">
+                <h1>Blog Section</h1>
+
+            </div>
+        </header>
+
+        <main>
+            <article class="flex-columns">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                            <img src="./image_resources/Photos/IMG_20210505_171727_968.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2 bg-light">
+                            <h2>Blog Post 1: Beginnings</h2>
+                            <p class="meta">
+                                <i class="fas fa-user"></i>Posted by <strong>Mithun NS</strong>| April 2021
+                            </p>
+                            <p>Probably the biggest challenge of moving abroad is that you are facing a new environment in every single aspect of your life – but this might also be the biggest gift! Starting a new job, facing new tasks and meeting new colleagues. Living in a new country, in a new flat. Leaving everything and everyone you know behind – it’s definitely not easy but can be very rewarding.</p>
+                            <p>The most important thing in order for you to make sure you’ll have a great time is to keep an open mindset and to not give up if things don’t work out in the first few weeks! In my opinion being proactive is the best way to go. I would for example recommend to start making a list of things you want to see and try out.</p>
+                            <p>Then of course it is helpful to inform yourself about the Polish culture and adapt to habits that you like (How about cycling everywhere? Have a smørrebrød in the city or go to the sauna and have a dip in the icecold sea afterwards!).</p>
+                            <p>I would also recommend living with flatmates because it makes it so much easier to get to know people.</p>
+                            <p>Other than that – just enjoy! Enjoy the butterflies in your stomach when you find out you are going to move abroad, enjoy learning about a new country, enjoy the excitement of leaving your comfort zone – it’ll all be worth it, for sure!</p>
+                           
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+
+            <article class="flex-columns flex-reverse">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                            <img src="./image_resources/blog/blog2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2 bg-dark">
+                            <h2>Blog Post Two: Mega Mind</h2>
+                            <p class="meta">
+                                <i class="fas fa-user"></i>Posted by <strong>Mithun NS</strong>| May 2021
+                            </p>
+                            <p>As a CEO or business leader, you understand the value of being on top of things. In addition to growing the business, it allows you to manage your team effectively. However, since there is always room for improvement, you should always check out what other leaders are doing. Resources like the Chief Executive Officer magazine give you a front-row seat to everything happening within the business world.</p>
+                            <a href="blog2.html" class="btn btn-light">
+                                <i class="fas fa-chevron"></i>
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+
+            <article class="flex-columns">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1 newheight">
+                            <img src="./image_resources/Photos/IMG_20210505_171723_526.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2 bg-light">
+                            <h2>Blog Post Three: My solo trip to <em>Paris</em></h2>
+                            <p class="meta">
+                                <i class="fas fa-user"></i>Posted by <strong>Mithun NS</strong>| June 2021
+                            </p>
+                            <p>Come experience my trip to Paris along with me and get to know more insider facts about Paris. </p>
+                            <a href="blog3.html" class="btn btn-dark">
+                                <i class="fas fa-chevron"></i>
+                                Coming Next Month
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+        </main>
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p> &copy;Copyright 2021 - MithunNS | 53135 | All rights reserved.</p>
+        </footer>
+        <script>
+             const navbar =document.getElementById('navbar');
+            let scrolled=false;
+
+            window.onscroll = function(){
+                if(window.pageYOffset > 100){
+                    navbar.classList.remove('top');
+                    if(!scrolled){
+                        navbar.style.transform='translateY(-70px)';
+                    }
+                    setTimeout(function(){
+                        navbar.style.transform='translateY(0)';
+                        scrolled=true;
+                     
+                    },200);
+                } 
+                else{
+                  navbar.classList.add('top');
+                  scrolled = false;
+                }
+            }
+
+        </script>
+</body>
+</html>

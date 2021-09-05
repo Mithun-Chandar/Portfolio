@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Blog Two</title>
+</head>
+<!-- HOME -->
+<body id="home">
+        <header class="hero blog">
+            <div id="navbar"class="navbar top">
+                <h1 class="logo">
+                    <span class="text-primary"><i class="fab fa-connectdevelop"></i> Mithun</span> NS
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#cases">Cases</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content">
+                <h1>Blog</h1>
+
+            </div>
+        </header>
+
+        <main>
+           <section class="post">
+               <h2>Blog Post Two</h2>
+               <p class="meta">
+                <i class="fas fa-user"></i>Posted by <strong>Mithun NS</strong>| April 2021
+            </p>
+            <img src="./image_resources/blog/blog1.jpg" alt="">
+            <p>As a <strong>CEO</strong> or business leader, you understand the value of being on top of things. In addition to growing the business, it allows you to manage your team effectively. However, since there is always room for improvement, you should always check out what other leaders are doing. Resources like the Chief Executive Officer magazine give you a front-row seat to everything happening within the business world.</p>
+            <p>There has been an ongoing debate as to whether or not a business school is worth the investment. But still, the reality is that you don’t have to go to a business school to understand how businesses work. There is an incredible amount of offline and online resources where you can learn new strategies, business skills, and ensure you stay on top of the latest industry developments.</p>
+            <p>In this article, we will focus on the business magazine as your resource for information. So, here are the top reasons you should be reading a Chief Executive Office magazine.</p>
+            <p><strong>Keeps you up-to-date with industry developments</strong><br/>By reading a business magazine, you will benefit from a thorough analysis of trends and cycles that other businesses follow. You will also gain great expert opinions and tips on some intricate issues surrounding your business. Since you’ll learn about the tips and suggestions on things that matter to your business, it will be easier for you to adjust your company’s condition and position it for even better success.</p>
+            <p><strong>Take advantage of expert advice</strong><br/>
+                One great thing about business magazines is that they bring together a community of like-minded individuals. It is even better when the magazine is online because it means that you will have access to experts from around the globe. You would pay thousands of dollars to consult or get advice from such experts. But since you are in the same community, you can always solicit some advice free of charge. Additionally, corporate magazines often have resources to help CEOs like you make informed choices – so it’s a low hanging fruit for your business.</p>
+            <p><strong>Learn about other companies</strong><br/>
+                As a business CEO, your main objective is to ensure that your company keeps up with the competition and that you have a steady flow of new and existing clients. That’s why both consumer and competitor information is critical. Corporate magazines give you access to crucial information about customer behavior. But most importantly, it provides information about other companies that are linked directly or indirectly to your own.</p> 
+            <p><strong>Get a detailed description</strong><br/>
+                Unlike newspapers, corporate magazines allow you to stick to the advice that is connected to your specific niche. These magazines are critical because they offer a detailed analysis and description analysis of the business world. Reading the right business magazine regularly will give you valuable insights into common and complex problems. It will also allow you to realize the state of your industry so that you can run your business in a protected manner.</p>
+             <p><strong>Conclusion</strong><br/>
+                The internet has made it easy for business leaders to access and digest information. However, you have to be careful where you get your information because these platforms aren’t created equally.</p>   
+
+           </section>
+
+            
+        </main>
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p> &copy;Copyright 2021 - MithunNS | 53135 | All rights reserved.</p>
+        </footer>
+        <script>
+             const navbar =document.getElementById('navbar');
+            let scrolled=false;
+
+            window.onscroll = function(){
+                if(window.pageYOffset > 100){
+                    navbar.classList.remove('top');
+                    if(!scrolled){
+                        navbar.style.transform='translateY(-70px)';
+                    }
+                    setTimeout(function(){
+                        navbar.style.transform='translateY(0)';
+                        scrolled=true;
+                     
+                    },200);
+                } 
+                else{
+                  navbar.classList.add('top');
+                  scrolled = false;
+                }
+            }
+
+        </script>
+</body>
+</html>

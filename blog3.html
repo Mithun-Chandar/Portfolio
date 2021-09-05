@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Welcome to EdgeLedger</title>
+</head>
+<!-- HOME -->
+<body id="home">
+        <header class="hero">
+            <div id="navbar"class="navbar top">
+                <h1 class="logo">
+                    <span class="text-primary"><i class="fab fa-connectdevelop"></i> Mithun</span> NS
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content">
+                <h1>Coming Soon...</h1>
+                <p> In the mean time feel free to drop your interest by filling a simpe form</p>
+                <a href="index.html#contact" class="btn"><i class="fas fa-chevron-right"></i>Click Here</a>
+
+            </div>
+        </header>
+
+       
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="https://www.facebook.com/mithun.chandar.7/"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://twitter.com/chandar_mithun"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.instagram.com/_mithunchandar_/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/mithun-n-s-03bab51b8/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p> &copy;Copyright 2021 - MithunNS | 53135 | All rights reserved.</p>
+        </footer>
+        <script>
+             const navbar =document.getElementById('navbar');
+            let scrolled=false;
+
+            window.onscroll = function(){
+                if(window.pageYOffset > 100){
+                    navbar.classList.remove('top');
+                    if(!scrolled){
+                        navbar.style.transform='translateY(-70px)';
+                    }
+                    setTimeout(function(){
+                        navbar.style.transform='translateY(0)';
+                        scrolled=true;
+                     
+                    },200);
+                } 
+                else{
+                  navbar.classList.add('top');
+                  scrolled = false;
+                }
+            }
+
+        </script>
+</body>
+</html>
